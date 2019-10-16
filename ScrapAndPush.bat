@@ -2,7 +2,7 @@
 
 :loop
 
-scrapy runspider WebCrawler.py;
+scrapy runspider ./WebCrawler.py;
 
 git add -A
 git commit -m "made changes"
