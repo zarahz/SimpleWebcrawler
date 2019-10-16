@@ -11,7 +11,7 @@ class UrlAndPasswordFinder(scrapy.Spider):
     name = "url_password_finder"
     start_urls = ['https://ubicomp.net/sw/task1.php']
 
-    def checkForExistingFile(self, filename):
+    def checkForExistingFile(filename):
         # if a file with this name already exists delete it
         fileExists = os.path.isfile('./' + filename)
         if fileExists:
