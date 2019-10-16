@@ -2,7 +2,7 @@
 
 :loop
 
-scrapy runspider E:\Dokumente\workspace\PWP\SimpleWebcrawler\WebCrawler.py;
+scrapy runspider E:/Dokumente/workspace/PWP/SimpleWebcrawler/WebCrawler.py;
 
 git add -A
 git commit -m "made changes"
