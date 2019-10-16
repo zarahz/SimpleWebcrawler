@@ -11,7 +11,7 @@ class UrlAndPasswordFinder(scrapy.Spider):
     name = "url_password_finder"
     start_urls = ['https://ubicomp.net/sw/task1.php']
 
-    def checkForExistingFile(filename):
+    def checkForExistingFile(self, filename):
         # if a file with this name already exists delete it
         fileExists = os.path.isfile('./' + filename)
         if fileExists:
@@ -25,7 +25,7 @@ class UrlAndPasswordFinder(scrapy.Spider):
        # if the content changes the length does too 
        # which results in a different filename
        filename = str(len(response.body)) + '.html'
-       UrlAndPasswordFinder.checkForExistingFile(filename)
+       self.checkForExistingFile(filename)
        
        with open(filename, 'wb') as f:
            # save the html body inside the file
