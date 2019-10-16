@@ -1,9 +1,7 @@
-#!/bin/sh
-
 :loop
 cd E:\Dokumente\workspace\PWP\SimpleWebcrawler
 echo dir
-scrapy runspider WebCrawler.py;
+scrapy runspider .\WebCrawler.py
 
 git add -A
 git commit -m "made changes"
