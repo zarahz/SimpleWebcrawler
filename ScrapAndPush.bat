@@ -7,5 +7,5 @@ git add -A
 git commit -m "made changes"
 git push
 
-sleep 60
+timeout 60
 goto loop
