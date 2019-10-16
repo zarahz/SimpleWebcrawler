@@ -33,6 +33,8 @@ class UrlAndPasswordFinder(scrapy.Spider):
             
 # execution commands:
 # get the content once: scrapy runspider scraper.py
-# execute the crawler every X seconds: watch -n 100 scrapy runspider WebCrawler.py
+# execute the crawler every X seconds 
+# mac/linux: watch -n 600 scrapy runspider WebCrawler.py
+# windows:   while (1) {scrapy runspider WebCrawler.py; sleep 600}
   
   
